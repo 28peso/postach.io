@@ -339,9 +339,9 @@
                     <a href="http://28peso.postach.io/2012-02-26">999円で平机の引き出しを作ってみた</a><br />
                 </div>
 
-                <!-- 最新記事5件 -->
+                <!-- 最新記事 -->
                 <div class="bio" style="padding-top:30px; line-height:140%">
-                <b>最新記事</b><br />
+                <b>最新記事</b><br /><br />
                     {% if posts_recent %}
                         {% for post in posts_recent %}
                             {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }}<br /><a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a><br /><br />
