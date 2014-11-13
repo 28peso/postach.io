@@ -340,11 +340,11 @@
                 </div>
 
                 <!-- 最新記事5件 -->
-                <div class="bio" style="padding-top:30px">
+                <div class="bio" style="padding-top:30px; line-height:120%">
                 <b>最新記事</b><br />
                     {% if posts_recent %}
                         {% for post in posts_recent %}
-                            {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} <a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a><br />
+                            {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }}<br /><a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a><br /><br />
                         {% endfor %}
                     {% endif %}
                 </div>
