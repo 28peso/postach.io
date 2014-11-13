@@ -344,7 +344,7 @@
                 <b>最新記事</b><br />
                     {% if posts_recent %}
                         {% for post in posts_recent %}
-                            {{ post.created_at|striptags|truncate(5,true,'')|replace("-","/") }} <a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a><br />
+                            {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} <a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a><br />
                         {% endfor %}
                     {% endif %}
                 </div>
