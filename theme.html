@@ -355,7 +355,7 @@
                 {% if site.tags %}
                     <ul class="tags">
                         {% for tag in site.tags %}
-                            <li><a href="/tag/{{ tag.name }}" style="text-transform: none;">{{ tag.name | format_tag(delimiter=' - ', humanize=True) }} ({{ tag.count }})</a></li>
+                            <li><a href="/tag/{{ tag.name }}" style="text-transform: none;">{{ tag.name | format_tag }} ({{ tag.count }})</a></li>
                         }
                         {% endfor %}
                     </ul>
