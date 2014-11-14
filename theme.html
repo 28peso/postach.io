@@ -189,7 +189,7 @@
                         <h2><a href="{{ post.permalink }}">{{ post.content.split('\n')[0]|striptags }}</a></h2>
                         <p class="muted">タグ：
                     {% for tag in post.tags %}
-                        <a href="/tag/{{ tag }}">{{ tag }}</a>,
+                        <a href="/tag/{{ tag }}">{{ tag }}</a>&nbsp;
                     {% endfor %}</p>
                         {{ post.content.split('\n')[1::]|join }}
 
